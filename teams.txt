@@ -1,0 +1,26 @@
+Sharks
+Name,Guardian Name(s),Soccer Experience
+Karl Saygan,Heather Bledsoe,YES
+Herschel Krustofski,Hyman and Rachel Krustofski,YES
+Phillip Helm,Thomas Helm and Eva Jones,YES
+Matt Gill,Charles and Sylvia Gill,NO
+Eva Gordon,Wendy and Mike Gordon,NO
+Joe Kavalier,Sam and Elaine Kavalier,NO
+
+Raptors
+Name,Guardian Name(s),Soccer Experience
+Suzane Greenberg,Henrietta Dumas,YES
+Bill Bon,Sara and Jenny Bon,YES
+Diego Soto,Robin and Sarika Soto,YES
+Ben Finkelstein,Aaron and Jill Finkelstein,NO
+Sal Dali,Gala Dali,NO
+Chloe Alaska,David and Jamie Alaska,NO
+
+Dragons
+Name,Guardian Name(s),Soccer Experience
+Joe Smith,Jim and Jan Smith,YES
+Jill Tanner,Clara Tanner,YES
+Les Clay,Wynonna Brown,YES
+Kimmy Stein,Bill and Hillary Stein,NO
+Sammy Adams,Jeff Adams,NO
+Arnold Willis,Claire Willis,NO
