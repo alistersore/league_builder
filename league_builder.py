@@ -27,7 +27,7 @@ def print_teams(team, teamname):
     print(teamname)
     print('\n')
     for row in team:
-        print(row['Name'],row['Soccer Experience'],row['Guardian Name(s)']) #Print fields and data to screen    
+        print(row['Name'],row['Soccer Experience'],row['Guardian Name(s)']) #Print fields and data to screen
 
 if __name__ == "__main__":
     with open('soccer_players.csv' ) as csvfile:
@@ -43,7 +43,6 @@ if __name__ == "__main__":
 
     number_of_experienced_players = len(experienced_players) / 3 #even number of players on each of 3 teams
     number_of_inexperienced_players = len(inexperienced_players) / 3
-<<<<<<< HEAD
     teammembers = ''
     #get a random sample of experienced and inexperienced players for each team
     def add_players(members, number_of_players):
@@ -65,9 +64,6 @@ if __name__ == "__main__":
         print('\n')
         for row in team:
             print(row['Name'],row['Soccer Experience'],row['Guardian Name(s)']) #Print fields and data to screen
-=======
->>>>>>> 5d2626cf1ba55ab923d0d46525f396331352b351
-
     # add players to teams
     add_to_team(sharks)
     add_to_team(dragons)
