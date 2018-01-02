@@ -25,7 +25,9 @@ if __name__ == "__main__":
     teammembers = ''
     #get a random sample of experienced and inexperienced players for each team
     def add_players(members, number_of_players):
-        teammembers = random.sample(members, number_of_players)
+        #in python 2.7 divide by float on .sample does not generate error
+        #in python 3.6 divide by float generates an error corrected by int(number_of_players)
+        teammembers = random.sample(members, int(number_of_players))
         for team_member in teammembers:
             members.remove(team_member)
         return teammembers
