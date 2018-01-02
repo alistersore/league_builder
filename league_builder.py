@@ -1,14 +1,35 @@
+import csv
+import random
+
+experienced_players = [] #added list for all experienced_players
+inexperienced_players = [] #add list for all inexperienced players
+teammembers = ''
+
+sharks = []
+dragons = []
+raptors = []
+
+#get a random sample of experienced and inexperienced players for each team
+def add_players(members, number_of_players):
+    teammembers = random.sample(members, number_of_players)
+    for team_member in teammembers:
+        members.remove(team_member)
+    return teammembers
+
+#function to add players to each team
+def add_to_team(team_name):
+    team_name.extend(add_players(experienced_players, number_of_experienced_players))
+    team_name.extend(add_players(inexperienced_players, number_of_inexperienced_players))
+    return (team_name)
+
+def print_teams(team, teamname):
+    print('\n')
+    print(teamname)
+    print('\n')
+    for row in team:
+        print(row['Name'],row['Soccer Experience'],row['Guardian Name(s)']) #Print fields and data to screen    
+
 if __name__ == "__main__":
-
-    import csv
-    import random
-    experienced_players = [] #added list for all experienced_players
-    inexperienced_players = [] #add list for all inexperienced players
-
-    sharks = []
-    dragons = []
-    raptors = []
-
     with open('soccer_players.csv' ) as csvfile:
         playerreader = csv.DictReader(csvfile, delimiter = ',' )
         rows = list(playerreader)
@@ -22,6 +43,7 @@ if __name__ == "__main__":
 
     number_of_experienced_players = len(experienced_players) / 3 #even number of players on each of 3 teams
     number_of_inexperienced_players = len(inexperienced_players) / 3
+<<<<<<< HEAD
     teammembers = ''
     #get a random sample of experienced and inexperienced players for each team
     def add_players(members, number_of_players):
@@ -43,6 +65,8 @@ if __name__ == "__main__":
         print('\n')
         for row in team:
             print(row['Name'],row['Soccer Experience'],row['Guardian Name(s)']) #Print fields and data to screen
+=======
+>>>>>>> 5d2626cf1ba55ab923d0d46525f396331352b351
 
     # add players to teams
     add_to_team(sharks)
